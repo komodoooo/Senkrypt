@@ -4,7 +4,7 @@ def crypt(text):
     if " " in text:
       text.replace(" ", "〆")
     else:
-      assert "〆" in text, "Don't try to break it!";
+      assert "〆" not in text, "Don't try to break it!";
     ewe = "";
     for sex in list(text):
         e = ord(sex) * len(text);
