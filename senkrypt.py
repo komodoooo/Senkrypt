@@ -1,4 +1,4 @@
-import sys
+import sys;
 
 def crypt(text):
     if " " in text:
@@ -34,14 +34,14 @@ def decrypt(text):
 
 if sys.argv[1].startswith("-c"):
     if sys.argv[2] != None:
-        crypt(sys.argv[2])
+        crypt(sys.argv[2]);
     else:
-        print("invalid argument")
+        print("invalid argument");
 elif sys.argv[1].startswith("-d"):
     if sys.argv[2] != None:
         try:
-            decrypt(sys.argv[2])
+            decrypt(sys.argv[2]);
         except Exception as not_sex:
-            print(f"Error:\n{not_sex}")
+            print(f"Error:\n{not_sex}");
     else:
-        print("invalid argument")
+        print("invalid argument");
