@@ -13,7 +13,6 @@ def crypt(text):
 
 
 def decrypt(text):
-    #assert len(text)%3==0, "Invalid text"
     first_step =  [text[i:i+3] for i in range(0, len(text), 3)]; second_step = []
     for i in first_step:
         second_step.append(int(i, 16))
@@ -25,17 +24,15 @@ def decrypt(text):
         final_step.append(chr(i))
     gohan = "".join([i for i in final_step])
     if "-" in gohan:
-      print(gohan.replace("-", " "))
+        print(gohan.replace("-", " "))
     else:
-      print(gohan)
+        print(gohan)
 
 
 try:
     if sys.argv[1].startswith("-c"):
         crypt(sys.argv[2])
     elif sys.argv[1].startswith("-d"):
-            decrypt(sys.argv[2])
+        decrypt(sys.argv[2])
 except Exception as not_sex:
     print(f"Error:\n{not_sex}")
-        
-
