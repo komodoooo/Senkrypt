@@ -2,6 +2,8 @@
 Senkrypt is a new encryption system made by me and takaso
 
 # Basic usage
+**disclosure: use "-" instead of the spaces to encrypt a word**
+
 **Crypt a word:**
 
 `python3 senkrypt.py -c sesso` ==> _22b23f23f1f923f_
@@ -14,4 +16,5 @@ Senkrypt is a new encryption system made by me and takaso
 **Credits**
 
 @komodoooo
+
 @takaso
