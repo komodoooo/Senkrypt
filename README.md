@@ -1,5 +1,5 @@
 # Senkrypt
-Senkrypt is a new encryption system made by me and takaso
+Senkrypt is a new encoding system made by me and takaso
 
 # Basic usage
 **disclosure: use "-" instead of the spaces to encrypt a word**
