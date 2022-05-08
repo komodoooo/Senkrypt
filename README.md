@@ -2,7 +2,7 @@
 Senkrypt is a new encoding system made by me and takaso
 
 # Basic usage
-**disclosure: use "-" instead of the spaces to encrypt a word**
+**disclosure: use "-" instead of the spaces to encode a word**
 
 **Crypt a word:**
 
