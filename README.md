@@ -9,7 +9,7 @@ Senkrypt is a new encoding system made by me and takaso
 `python3 senkrypt.py -c sesso` ==> _22b23f23f1f923f_
 
 
-**Decrypt a word:**
+**Decode a word:**
 
 `python3 senkrypt.py -d 22b23f23f1f923f` ==> _sesso_
 
