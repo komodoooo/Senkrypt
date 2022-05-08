@@ -4,7 +4,7 @@ Senkrypt is a new encoding system made by me and takaso
 # Basic usage
 **disclosure: use "-" instead of the spaces to encode a word**
 
-**Crypt a word:**
+**Encode a word:**
 
 `python3 senkrypt.py -c sesso` ==> _22b23f23f1f923f_
 
