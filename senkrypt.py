@@ -1,6 +1,6 @@
 import sys
 
-def crypt(text):
+def encode(text):
     if "-" in text:
         text.replace("-", "")
     ewe = ""
@@ -12,7 +12,7 @@ def crypt(text):
     print("".join(ok[::-1]))
 
 
-def decrypt(text):
+def decode(text):
     first_step =  [text[i:i+3] for i in range(0, len(text), 3)]; second_step = []
     for i in first_step:
         second_step.append(int(i, 16))
@@ -30,9 +30,9 @@ def decrypt(text):
 
 
 try:
-    if sys.argv[1].startswith("-c"):
-        crypt(sys.argv[2])
+    if sys.argv[1].startswith("-e"):
+        encode(sys.argv[2])
     elif sys.argv[1].startswith("-d"):
-        decrypt(sys.argv[2])
+        decode(sys.argv[2])
 except Exception as not_sex:
     print(f"Error:\n{not_sex}")
