@@ -1,17 +1,28 @@
 # Senkrypt
-Senkrypt is a new encoding system made by me and takaso
+Senkrypt is a new encryption system made by me and takaso
 
 # Basic usage
-**disclosure: use "-" instead of the spaces to encode a word**
+**disclosure: use "-" instead of the spaces to encode a word, don't use "<" or ">" as key**
 
-**Encode a word:**
+**Encrypt a word:**
 
-`python3 senkrypt.py -e sesso` ==> _22b23f23f1f923f_
+`python3 senkrypt.py -e oscuro key` ==> _`2a82ba2cc2602c02a8`_
+
+**Decrypt a word:**
+
+`python3 senkrypt.py -d 2a82ba2cc2602c02a8 key` ==> _`oscuro`_
+
+# Old encoding system
+## You can use senkrypt also without key, as encoding system
 
 
-**Decode a word:**
+**Encode a word: (without key)**
 
-`python3 senkrypt.py -d 22b23f23f1f923f` ==> _sesso_
+`python3 senkrypt.py -e sesso` ==> _`22b23f23f1f923f`_
+
+**Decode a word: (without key)**
+
+`python3 senkrypt.py -d 22b23f23f1f923f` ==> _`sesso`_
 
 **Credits**
 
