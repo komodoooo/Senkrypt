@@ -6,11 +6,11 @@ Senkrypt is a new encryption system made by me and takaso
 
 **Encrypt a word:**
 
-`python3 senkrypt.py -e oscuro key` ==> _`2a82ba2cc2602c02a8`_
+`python3 senkrypt.py -e oscuro -k key` ==> _`2a82ba2cc2602c02a8`_
 
 **Decrypt a word:**
 
-`python3 senkrypt.py -d 2a82ba2cc2602c02a8 key` ==> _`oscuro`_
+`python3 senkrypt.py -d 2a82ba2cc2602c02a8 -k key` ==> _`oscuro`_
 
 # Old encoding system
 ## You can use senkrypt also without key, as encoding system
