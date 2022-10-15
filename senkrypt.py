@@ -14,7 +14,10 @@ def key(key) -> str:
         return 0
 
 try:
-    KEY = key(sys.argv[3])
+    if sys.argv[3].startswith("-k"):
+        KEY = key(sys.argv[4])
+    else:
+        pass
 except IndexError:
     KEY = 0
 
