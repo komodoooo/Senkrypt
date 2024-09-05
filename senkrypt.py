@@ -1,4 +1,10 @@
-import sys
+import argparse, sys
+
+parser = argparse.ArgumentParser()
+parser.add_argument("-e", type=str)
+parser.add_argument("-d", type=str)
+parser.add_argument("-k", type=str)
+arg = parser.parse_args()
 
 def key(key) -> str:
     if key != None:
@@ -13,17 +19,12 @@ def key(key) -> str:
     else: 
         return 0
 
-try:
-    if sys.argv[3].startswith("-k"):
-        KEY = key(sys.argv[4])
-    else:
-        pass
-except IndexError:
+if arg.k:
+    KEY = key(arg.k)
+else:
     KEY = 0
 
 def encrypt(text):
-    if "-" in text:
-        text.replace("-", "")
     ewe = ""
     for sex in list(text):
         e = ord(sex) * len(text) + KEY
@@ -46,15 +47,12 @@ def decrypt(text):
     for i in third_step:
         final_step.append(chr(i))
     gohan = "".join([i for i in final_step])
-    if "-" in gohan:
-        print(gohan.replace("-", " "))
-    else:
-        print(gohan)
+    print(gohan)
 
 try:
-    if sys.argv[1].startswith("-e"):
-        encrypt(sys.argv[2])
-    elif sys.argv[1].startswith("-d"):
-        decrypt(sys.argv[2])
+    if arg.e:
+        encrypt(arg.e)
+    elif arg.d:
+        decrypt(arg.d)
 except Exception as not_sex:
     print(f"Error:\n{not_sex}")
